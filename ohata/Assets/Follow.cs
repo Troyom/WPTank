@@ -53,6 +53,12 @@ public class Follow : MonoBehaviour
         currentWP = 0;
     }
 
+    public void GoToBarracas()
+    {
+        g.AStar(currentNode, wps[3]);
+        currentWP = 0;
+    }
+
     void LateUpdate()
     {
         //Caminhada
